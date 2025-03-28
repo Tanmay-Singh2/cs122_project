@@ -8,6 +8,19 @@ Khushi Chandra
 
 Through this project, we aim to design an interactive Python-based application with a custom GUI designed to analyze and visualize real-time air traffic data using the OpenSky Network. The interface would enable users to access live web data from the OpenSky Network data. Our plan is to scrape the web data and locally organize the aircraft information for further analysis (in potentially csv files). The application aims to focus on three core analytical components: comparing air traffic patterns between major cities and states, detecting congestion levels near busy airports, and identifying air traffic volume trends over time. Through easy-to-understand visualizations such as heatmaps, line charts, and interactive maps, the tool will provide users with insights into global airspace dynamics. 
 
+## Project Outline
+
+- **Project Goal:** Create an interactive Python application to analyze and visualize real-time air traffic data.  
+- **Data Source:** OpenSky Network API for live aircraft tracking data.  
+- **GUI Framework:** Tkinter (or Flask if switched to a web app).  
+- **Key Features:**
+  - Fetch live flight data and store it locally.
+  - Compare air traffic patterns across cities and states.
+  - Detect congestion near major airports.
+  - Analyze trends in air traffic volume over time.
+- **Visualization Tools:** Matplotlib, Seaborn, and Folium for charts, heatmaps, and interactive maps.  
+- **Storage Format:** CSV and JSON files for efficient data management.  
+
 ## Project Plan and Outline:
 
 ### Interface Plan (Tanmay Singh and Khushi Chandra)
