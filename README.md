@@ -21,7 +21,7 @@ Through this project, we aim to design an interactive Python-based application w
 - **Visualization Tools:** Matplotlib, Seaborn, and Folium for charts, heatmaps, and interactive maps.  
 - **Storage Format:** CSV and JSON files for efficient data management.  
 
-## Project Plan and Outline:
+## Detailed Project Plan and Outline:
 
 ### Interface Plan (Tanmay Singh and Khushi Chandra)
 
