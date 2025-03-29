@@ -37,11 +37,11 @@ Here is a link to the OpenSky website: https://opensky-network.org/
 
 For our analysis, we will utilize Python’s Pandas, NumPy, and SciPy libraries to process and analyze air traffic data efficiently. The three core aspects of our analysis include:
 
-- Traffic Comparison: We will calculate aircraft density and movement patterns in different regions, comparing air traffic between cities and states in the U.S. Statistical methods will be applied to identify significant differences.
+- **Traffic Comparison**: We will calculate aircraft density and movement patterns in different regions, comparing air traffic between cities and states in the U.S. Statistical methods will be applied to identify significant differences.
 
-- Airport Congestion Analysis: By tracking the number of flights approaching major airports throughout the day, we will pinpoint peak congestion hours and assess potential bottlenecks.
+- **Airport Congestion Analysis**: By tracking the number of flights approaching major airports throughout the day, we will pinpoint peak congestion hours and assess potential bottlenecks.
 
-- Trend Analysis: Using historical data, we will visualize air traffic volume fluctuations over different times of the day and across multiple days to detect seasonal or weekly patterns.
+- **Trend Analysis**: Using historical data, we will visualize air traffic volume fluctuations over different times of the day and across multiple days to detect seasonal or weekly patterns.
 
 For visualization, we will employ Matplotlib, Seaborn, and Folium to generate:
 
