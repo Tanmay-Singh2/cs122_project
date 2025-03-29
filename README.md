@@ -29,7 +29,7 @@ For the Interface plan we plan on using the Tkinter library of Python and develo
 
 ### Data Collection and Storage Plan (Tanmay Singh)
 
-For the Data collection and storage plan, I will be collecting data from the OpenSky Network using their REST API and Python client. The application will pull real-time flight data based on important parameters such as National boundaries and airport codes. I aim to scrap the data at regular intervals and organize it locally using CSV and JSON files. I will also be using the Pandas DataFrames in Python to store and work with the flight data files, so I don’t have to keep calling the API calls every time I need something. I will also keep important details like timestamps, origin countries, altitude, and speed to help my teammate better analyze how things change over time. If needed, I might also save historical data locally to track trends and patterns more effectively.
+For the Data collection and storage plan, I will be collecting data from the OpenSky Network using their REST API and Python client. The application will pull real-time flight data based on important parameters such as National boundaries and airport codes. I aim to scrape the data at regular intervals and organize it locally using CSV and JSON files. I will also be using the Pandas DataFrames in Python to store and work with the flight data files, so I don’t have to keep calling the API calls every time I need something. I will also keep important details like timestamps, origin countries, altitude, and speed to help my teammate better analyze how things change over time. If needed, I might also save historical data locally to track trends and patterns more effectively.
 
 Here is a link to the OpenSky website: https://opensky-network.org/
 
