@@ -12,7 +12,7 @@ Through this project, we aim to design an interactive Python-based application w
 
 - **Project Goal:** Create an interactive Python application to analyze and visualize real-time air traffic data.  
 - **Data Source:** OpenSky Network API for live aircraft tracking data.  
-- **GUI Framework:** Tkinter (or Flask if switched to a web app).  
+- **GUI Framework:** Tkinter   
 - **Key Features:**
   - Fetch live flight data and store it locally.
   - Compare air traffic patterns across cities and states.
@@ -29,7 +29,26 @@ For the Interface plan we plan on using the Tkinter library of Python and develo
 
 ### Data Collection and Storage Plan (Tanmay Singh)
 
-For the Data collection and storage plan, I will be collecting data from the OpenSky Network using their REST API and Python client. The application will pull real-time flight data based on important parameters such as National boundaries and airport codes. I aim to scrape the data at regular intervals and organize it locally using CSV and JSON files. I will also be using the Pandas DataFrames in Python to store and work with the flight data files, so I don’t have to keep calling the API calls every time I need something. I will also keep important details like timestamps, origin countries, altitude, and speed to help my teammate better analyze how things change over time. If needed, I might also save historical data locally to track trends and patterns more effectively.
+- **Collect data using the OpenSky Network API**  
+  I will use the OpenSky Network's REST API and Python client to access real-time flight data.
+
+- **Filter data by key parameters**  
+  The data will be pulled based on important criteria such as national boundaries and specific airport codes.
+
+- **Scrape and update data regularly**  
+  I plan to set up regular scraping intervals to keep the data fresh and continuously updated.
+
+- **Store data locally in CSV and JSON formats**  
+  The scraped data will be saved in local files using CSV and JSON formats for easy access and backup.
+
+- **Use Pandas for data storage and manipulation**  
+  I will load the data into Pandas DataFrames to analyze it efficiently without constantly querying the API.
+
+- **Preserve important flight metadata**  
+  Key information like timestamps, origin countries, altitudes, and speeds will be kept for analysis.
+
+- **Save historical snapshots for trend analysis**  
+  When needed, I will store historical copies of the data to help track changes and identify long-term patterns.
 
 Here is a link to the OpenSky website: https://opensky-network.org/
 
