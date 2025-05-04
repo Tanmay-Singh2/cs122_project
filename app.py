@@ -7,7 +7,10 @@ import pandas as pd
 
 app = Flask(__name__)
 
+import os
+
 def fetch_flights():
+    # Fetch flight data
     resp = requests.get("https://opensky-network.org/api/states/all", timeout=10)
     raw = resp.json().get("states", [])
     cols = [
@@ -16,11 +19,18 @@ def fetch_flights():
         "sensors","geo_altitude","squawk","spi","position_source"
     ]
     df = pd.DataFrame(raw, columns=cols)
-    df["callsign"]  = df.callsign.str.strip().fillna("N/A")
-    df = df.dropna(subset=["lat","lon"])
-    df["alt_ft"]   = (df.baro_altitude.fillna(0) * 3.28084).round().astype(int)
-    df["heading"]  = df.heading.fillna(0)
+    df["callsign"] = df.callsign.str.strip().fillna("N/A")
+    df = df.dropna(subset=["lat", "lon"])
+    df["alt_ft"] = (df.baro_altitude.fillna(0) * 3.28084).round().astype(int)
+    df["heading"] = df.heading.fillna(0)
+
+    timestamp = datetime.now(ZoneInfo("UTC")).strftime("%Y%m%d_%H%M%S")
+    os.makedirs("data/csv", exist_ok=True)
+    filepath = f"data/csv/flights_{timestamp}.csv"
+    df.to_csv(filepath, index=False)
+
     return df
+
 
 def get_color(alt_ft):
     if   alt_ft < 1000:  return "#ff4500"
