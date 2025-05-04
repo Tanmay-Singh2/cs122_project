@@ -2,40 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Airlind Analysis</title>
+  <title>Airline Analysis</title>
   <style>
     body {
-      margin: 0;
       background: #f8f9fa;
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
+      padding: 40px;
     }
     h1 {
       color: #2c3e50;
-      font-size: 2em;
-      margin: 0 20px;
     }
-    .back {
-      margin-top: 20px;
+    .button-group {
+      margin-top: 30px;
+    }
+    .button-group a {
+      display: inline-block;
       background: #3498db;
       color: white;
-      padding: 10px 20px;
-      border-radius: 12px;
+      padding: 15px 25px;
+      margin: 10px;
+      border-radius: 10px;
       text-decoration: none;
-      font-size: 1em;
+      font-size: 1.1em;
     }
-    .back:hover {
+    .button-group a:hover {
       background: #2980b9;
     }
   </style>
+  
+
 </head>
 <body>
-  <h1>What kind of stats do you want to see?</h1>
-  <a href="/" class="back">← Back to Map</a>
+  <h1>Select Analysis Type</h1>
+  <div class="button-group">
+    <a href="/analysis/top-countries">🌍 Top Countries by Flights</a>
+    <a href="/analysis/flight-volume">🛩️ Flights by Altitude</a>
+    <a href="/analysis/density">📍 Flight Density Heatmap</a>
+  </div>
+  <br><br>
+  <a href="/" class="button-group">← Back to Map</a>
 </body>
 </html>
