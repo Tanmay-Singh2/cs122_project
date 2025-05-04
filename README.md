@@ -52,5 +52,3 @@ Three visualizations were developed:
 
 ---
 
-## 📁 Project Structure
-
