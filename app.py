@@ -71,7 +71,7 @@ def index():
         ).add_to(fmap)
 
     pac = datetime.now(ZoneInfo("America/Los_Angeles")).strftime("%Y-%m-%d %I:%M:%S %p %Z")
-    title = "Airlind US Map" if view=="us" else "Airlind World Map"
+    title = "Airline US Map" if view=="us" else "Airline World Map"
     fmap.get_root().html.add_child(folium.Element(
         f"<h3 style='text-align:center; font-family:Arial,sans-serif; color:#333'>{title} — Last update {pac}</h3>"
     ))
